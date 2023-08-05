@@ -103,3 +103,88 @@ body {
     top: 0;
 }
 /* header end */
+
+
+
+/* project contents start */
+.project-contents {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project {
+    margin-bottom: 3rem;
+    height: 270px;
+    width: 31%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.project-thumb {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.project-thumb:hover img {
+    transform: scale(1.2);
+}
+
+.project-thumb .tags {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.85rem;
+    color: #fff;
+    z-index: 999;
+}
+
+.project-thumb .tags span {
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.12rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+}
+
+.project-thumb .tags span.html {
+    background: #de5e02;
+}
+
+.project-thumb .tags span.css {
+    background: #11a9fb;
+}
+
+.project-thumb .tags span.javascript {
+    background: #d2ae10;
+}
+
+.project-details {
+    margin-left: 0.85rem;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.project-details p {
+    color: #222;
+    font-size: 1.2rem;
+}
+/* project contents end */
