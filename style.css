@@ -43,9 +43,11 @@ body {
     justify-content: space-between;
 }
 
-.header h1 {
+.header > a {
     color: #fff;
     font-size: 2.4rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .toggler {
@@ -216,7 +218,7 @@ body {
 
 
 /* project contents start */
-.project-contents {
+.projects {
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
@@ -226,7 +228,7 @@ body {
     justify-content: space-between;
 }
 
-.project {
+.card {
     margin-bottom: 3rem;
     height: 270px;
     width: 31%;
@@ -235,7 +237,7 @@ body {
     overflow: hidden;
 }
 
-.project-thumb {
+.thumb {
     position: relative;
     height: 80%;
     width: 100%;
@@ -243,18 +245,18 @@ body {
     cursor: pointer;
 }
 
-.project-thumb img {
+.thumb img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
 }
 
-.project-thumb:hover img {
+.thumb:hover img {
     transform: scale(1.2);
 }
 
-.project-thumb .tags {
+.thumb .tags {
     position: absolute;
     bottom: 1rem;
     left: 0.85rem;
@@ -262,7 +264,7 @@ body {
     z-index: 999;
 }
 
-.project-thumb .tags span {
+.thumb .tags span {
     padding: 0.2rem 0.4rem;
     margin-right: 0.12rem;
     color: #fff;
@@ -271,19 +273,19 @@ body {
     box-shadow: 0.1rem 0.1rem 0.2rem #222;
 }
 
-.project-thumb .tags span.html {
+.thumb .tags span.html {
     background: #de5e02;
 }
 
-.project-thumb .tags span.css {
+.thumb .tags span.css {
     background: #11a9fb;
 }
 
-.project-thumb .tags span.javascript {
+.thumb .tags span.javascript {
     background: #d2ae10;
 }
 
-.project-details {
+.title {
     margin-left: 0.85rem;
     width: 100%;
     height: 20%;
@@ -292,7 +294,7 @@ body {
     justify-content: flex-start;
 }
 
-.project-details p {
+.title p {
     color: #222;
     font-size: 1.2rem;
 }
@@ -327,23 +329,23 @@ footer p a {
 
 /* responsive */
 @media screen and (max-width: 1280px) {
-    .project {
+    .card {
         width: 32%;
     }
 }
 
 @media screen and (max-width: 1020px) {
-    .project {
+    .card {
         width: 48%;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .project-contents {
+    .projects {
         justify-content: center;
     }
 
-    .project {
+    .card {
         margin: 1.2rem 0;
         width: 100%;
         max-width: 420px; 
